@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog y Foro de Billie Eilish</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER: Barra de navegación con enlaces -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo de Fans de Billie Eilish">
+            </div>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#news">Noticias</a></li>
+                <li><a href="#albums">Álbumes</a></li>
+                <li><a href="#gallery">Galería</a></li>
+                <li><a href="#forum">Foro</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SECCIÓN PRINCIPAL -->
+    <main>
+        <!-- Portada -->
+        <section id="home" class="hero-section">
+            <h1>Bienvenido al Blog y Foro de Billie Eilish</h1>
+            <p>Explora el mundo de Billie Eilish y conecta con otros fans.</p>
+        </section>
+
+        <!-- Sección de Blog -->
+        <section id="blog" class="section blog">
+            <h2>Blog de Billie Eilish</h2>
+            <div class="blog-container">
+                <!-- Publicaciones del blog -->
+                <article class="blog-post">
+                    <h3>La historia detrás de 'Happier Than Ever'</h3>
+                    <p>Billie comparte la inspiración detrás de su último álbum...</p>
+                    <a href="post1.html" class="read-more">Leer más</a>
+                </article>
+                <article class="blog-post">
+                    <h3>La evolución de la moda de Billie</h3>
+                    <p>Un vistazo a cómo el estilo de Billie ha cambiado a lo largo de los años...</p>
+                    <a href="post2.html" class="read-more">Leer más</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección de Noticias -->
+        <section id="news" class="section news">
+            <h2>Últimas Noticias</h2>
+            <div class="news-container">
+                <!-- Noticias -->
+                <article class="news-item">
+                    <img src="img/news1.jpg" alt="Noticia de Billie 1">
+                    <h3>Lanzamiento del nuevo álbum</h3>
+                    <p>Billie Eilish lanza su último álbum. ¡Descúbrelo aquí!</p>
+                </article>
+                <article class="news-item">
+                    <img src="img/news2.jpg" alt="Noticia de Billie 2">
+                    <h3>Fechas del tour mundial anunciadas</h3>
+                    <p>Descubre las fechas y ubicaciones de su gira mundial.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección de Álbumes -->
+        <section id="albums" class="section albums">
+            <h2>Álbumes</h2>
+            <div class="albums-container">
+                <div class="album-item">
+                    <img src="img/album1.jpg" alt="Álbum 1">
+                    <h3>Happier Than Ever</h3>
+                    <p>Lanzado: 2021</p>
+                </div>
+                <div class="album-item">
+                    <img src="img/album2.jpg" alt="Álbum 2">
+                    <h3>When We All Fall Asleep, Where Do We Go?</h3>
+                    <p>Lanzado: 2019</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Galería -->
+        <section id="gallery" class="section gallery">
+            <h2>Galería</h2>
+            <div class="gallery-container">
+                <img src="img/gallery1.jpg" alt="Billie 1">
+                <img src="img/gallery2.jpg" alt="Billie 2">
+                <img src="img/gallery3.jpg" alt="Billie 3">
+            </div>
+        </section>
+
+        <!-- Sección del Foro -->
+        <section id="forum" class="section forum">
+            <h2>Foro de Fans</h2>
+            <p>¡Únete a la conversación y conéctate con otros fans de Billie!</p>
+            <div class="forum-container">
+                <article class="forum-post">
+                    <h3>¿Canción favorita de Billie Eilish?</h3>
+                    <p>por <strong>User123</strong></p>
+                    <a href="forum-post1.html" class="join-discussion">Unirse a la discusión</a>
+                </article>
+                <article class="forum-post">
+                    <h3>¿Qué opinas del nuevo álbum?</h3>
+                    <p>por <strong>Fan2024</strong></p>
+                    <a href="forum-post2.html" class="join-discussion">Unirse a la discusión</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section id="contact" class="section contact">
+            <h2>Contacto</h2>
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2024 Blog y Foro de Billie Eilish. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

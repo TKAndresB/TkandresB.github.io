@@ -1,0 +1,152 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #101010;
+    color: #fff;
+}
+
+header {
+    background-color: #1c1c1c;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('billie-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Estilos del blog */
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.blog-post {
+    background-color: #252525;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.blog-post a.read-more {
+    color: #f0e68c;
+}
+
+/* Estilos del foro */
+.forum-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.forum-post {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.join-discussion {
+    color: #f0e68c;
+    text-decoration: none;
+}
+
+.join-discussion:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #1c1c1c;
+    padding: 20px;
+    text-align: center;
+}
+/* Sección del tema del foro */
+.forum-post-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #252525;
+    color: #f0e68c;
+}
+
+.comments-section {
+    padding: 20px;
+    background-color: #1c1c1c;
+}
+
+.comment {
+    background-color: #333;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.comment p {
+    margin: 5px 0;
+}
+
+.comment span {
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+/* Estilos del formulario */
+.new-comment-section {
+    padding: 20px;
+    background-color: #252525;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+input:focus, textarea:focus {
+    outline: 2px solid #f0e68c;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #f0e68c;
+    border: none;
+    color: #101010;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d4c760;
+}
