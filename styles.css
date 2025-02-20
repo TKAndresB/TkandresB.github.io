@@ -1,152 +1,140 @@
+/* Importar fuente de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
 /* Estilos generales */
-body {
-    font-family: 'Arial', sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #101010;
-    color: #fff;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
+body {
+    background-color: #f8f4e3;
+    color: #333;
+}
+
+/* Estilo del encabezado */
 header {
-    background-color: #1c1c1c;
+    background-color: #c0392b;
+    color: white;
+    text-align: center;
     padding: 20px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline;
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
+    padding: 8px 12px;
+    transition: background 0.3s ease-in-out;
 }
 
-/* Hero Section */
-.hero-section {
-    background-image: url('billie-hero.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.section {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-/* Estilos del blog */
-.blog-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-
-.blog-post {
-    background-color: #252525;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.blog-post a.read-more {
-    color: #f0e68c;
-}
-
-/* Estilos del foro */
-.forum-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-
-.forum-post {
-    background-color: #333;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.join-discussion {
-    color: #f0e68c;
-    text-decoration: none;
-}
-
-.join-discussion:hover {
-    text-decoration: underline;
-}
-
-/* Footer */
-footer {
-    background-color: #1c1c1c;
-    padding: 20px;
-    text-align: center;
-}
-/* Sección del tema del foro */
-.forum-post-section {
-    text-align: center;
-    padding: 20px;
-    background-color: #252525;
-    color: #f0e68c;
-}
-
-.comments-section {
-    padding: 20px;
-    background-color: #1c1c1c;
-}
-
-.comment {
-    background-color: #333;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 10px;
-}
-
-.comment p {
-    margin: 5px 0;
-}
-
-.comment span {
-    font-size: 0.9em;
-    color: #ccc;
-}
-
-/* Estilos del formulario */
-.new-comment-section {
-    padding: 20px;
-    background-color: #252525;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-input, textarea {
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    border: none;
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
 }
 
-input:focus, textarea:focus {
-    outline: 2px solid #f0e68c;
+/* Secciones principales */
+section {
+    padding: 40px 10%;
+}
+
+h2 {
+    text-align: center;
+    color: #c0392b;
+    margin-bottom: 20px;
+}
+
+.categorias {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Sliders */
+.slider-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.slider {
+    width: 30%;
+    height: 200px;
+    background: #e74c3c;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+/* Estilos para las secciones de leyendas, mitos y cuentos */
+.leyenda-item, .mito-item, .cuento-item {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
 }
 
 button {
-    padding: 10px 20px;
-    background-color: #f0e68c;
+    background: #c0392b;
+    color: white;
     border: none;
-    color: #101010;
+    padding: 10px 15px;
+    margin: 10px;
     cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out;
 }
 
 button:hover {
-    background-color: #d4c760;
+    background: #a93226;
+    transform: scale(1.05);
+}
+
+/* Pie de página */
+footer {
+    background: #c0392b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .slider {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .leyenda-item, .mito-item, .cuento-item {
+        width: 100%;
+    }
 }
