@@ -3,140 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog y Foro de Billie Eilish</title>
+    <title>Raíces y Letras</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- HEADER: Barra de navegación con enlaces -->
+
+    <!-- Encabezado con navegación -->
     <header>
-        <nav>
-            <div class="logo">
-                <img src="img/logo.png" alt="Logo de Fans de Billie Eilish">
-            </div>
+        <h1>Raíces y Letras: Explorando la Cultura y Literatura Colombiana</h1>
+        <nav aria-label="Menú principal">
             <ul>
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#news">Noticias</a></li>
-                <li><a href="#albums">Álbumes</a></li>
-                <li><a href="#gallery">Galería</a></li>
-                <li><a href="#forum">Foro</a></li>
-                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#leyendas">Leyendas</a></li>
+                <li><a href="#mitos">Mitos</a></li>
+                <li><a href="#cuentos">Cuentos</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- SECCIÓN PRINCIPAL -->
     <main>
-        <!-- Portada -->
-        <section id="home" class="hero-section">
-            <h1>Bienvenido al Blog y Foro de Billie Eilish</h1>
-            <p>Explora el mundo de Billie Eilish y conecta con otros fans.</p>
-        </section>
-
-        <!-- Sección de Blog -->
-        <section id="blog" class="section blog">
-            <h2>Blog de Billie Eilish</h2>
-            <div class="blog-container">
-                <!-- Publicaciones del blog -->
-                <article class="blog-post">
-                    <h3>La historia detrás de 'Happier Than Ever'</h3>
-                    <p>Billie comparte la inspiración detrás de su último álbum...</p>
-                    <a href="post1.html" class="read-more">Leer más</a>
-                </article>
-                <article class="blog-post">
-                    <h3>La evolución de la moda de Billie</h3>
-                    <p>Un vistazo a cómo el estilo de Billie ha cambiado a lo largo de los años...</p>
-                    <a href="post2.html" class="read-more">Leer más</a>
-                </article>
+        <!-- Sección de inicio con sliders -->
+        <section id="inicio">
+            <h2>Bienvenido</h2>
+            <p>Descubre la riqueza cultural de Colombia a través de sus mitos, leyendas y cuentos.</p>
+            <div class="slider-container">
+                <div class="slider" id="slider-leyendas"></div>
+                <div class="slider" id="slider-mitos"></div>
+                <div class="slider" id="slider-cuentos"></div>
             </div>
         </section>
 
-        <!-- Sección de Noticias -->
-        <section id="news" class="section news">
-            <h2>Últimas Noticias</h2>
-            <div class="news-container">
-                <!-- Noticias -->
-                <article class="news-item">
-                    <img src="img/news1.jpg" alt="Noticia de Billie 1">
-                    <h3>Lanzamiento del nuevo álbum</h3>
-                    <p>Billie Eilish lanza su último álbum. ¡Descúbrelo aquí!</p>
-                </article>
-                <article class="news-item">
-                    <img src="img/news2.jpg" alt="Noticia de Billie 2">
-                    <h3>Fechas del tour mundial anunciadas</h3>
-                    <p>Descubre las fechas y ubicaciones de su gira mundial.</p>
-                </article>
-            </div>
+        <!-- Sección de Leyendas -->
+        <section id="leyendas">
+            <h2>Leyendas</h2>
+            <p>Explora leyendas de distintas regiones de Colombia.</p>
+            <div class="categorias">Categorías por región</div>
+            <article class="leyenda-item">
+                <h3>Nombre de la Leyenda</h3>
+                <button>🎧 Escuchar Podcast</button>
+                <button>📄 Descargar PDF</button>
+            </article>
         </section>
 
-        <!-- Sección de Álbumes -->
-        <section id="albums" class="section albums">
-            <h2>Álbumes</h2>
-            <div class="albums-container">
-                <div class="album-item">
-                    <img src="img/album1.jpg" alt="Álbum 1">
-                    <h3>Happier Than Ever</h3>
-                    <p>Lanzado: 2021</p>
-                </div>
-                <div class="album-item">
-                    <img src="img/album2.jpg" alt="Álbum 2">
-                    <h3>When We All Fall Asleep, Where Do We Go?</h3>
-                    <p>Lanzado: 2019</p>
-                </div>
-            </div>
+        <!-- Sección de Mitos -->
+        <section id="mitos">
+            <h2>Mitos</h2>
+            <p>Conoce los mitos más famosos de la tradición oral colombiana.</p>
+            <div class="categorias">Categorías por región</div>
+            <article class="mito-item">
+                <h3>Nombre del Mito</h3>
+                <button>🎧 Escuchar Podcast</button>
+                <button>📄 Descargar PDF</button>
+            </article>
         </section>
 
-        <!-- Sección de Galería -->
-        <section id="gallery" class="section gallery">
-            <h2>Galería</h2>
-            <div class="gallery-container">
-                <img src="img/gallery1.jpg" alt="Billie 1">
-                <img src="img/gallery2.jpg" alt="Billie 2">
-                <img src="img/gallery3.jpg" alt="Billie 3">
-            </div>
-        </section>
-
-        <!-- Sección del Foro -->
-        <section id="forum" class="section forum">
-            <h2>Foro de Fans</h2>
-            <p>¡Únete a la conversación y conéctate con otros fans de Billie!</p>
-            <div class="forum-container">
-                <article class="forum-post">
-                    <h3>¿Canción favorita de Billie Eilish?</h3>
-                    <p>por <strong>User123</strong></p>
-                    <a href="forum-post1.html" class="join-discussion">Unirse a la discusión</a>
-                </article>
-                <article class="forum-post">
-                    <h3>¿Qué opinas del nuevo álbum?</h3>
-                    <p>por <strong>Fan2024</strong></p>
-                    <a href="forum-post2.html" class="join-discussion">Unirse a la discusión</a>
-                </article>
-            </div>
-        </section>
-
-        <!-- Sección de Contacto -->
-        <section id="contact" class="section contact">
-            <h2>Contacto</h2>
-            <form>
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Enviar</button>
-            </form>
+        <!-- Sección de Cuentos -->
+        <section id="cuentos">
+            <h2>Cuentos</h2>
+            <p>Descubre cuentos tradicionales que han pasado de generación en generación.</p>
+            <div class="categorias">Categorías por región</div>
+            <article class="cuento-item">
+                <h3>Nombre del Cuento</h3>
+                <button>🎧 Escuchar Podcast</button>
+                <button>📄 Descargar PDF</button>
+            </article>
         </section>
     </main>
 
-    <!-- FOOTER -->
+    <!-- Pie de página -->
     <footer>
-        <p>&copy; 2024 Blog y Foro de Billie Eilish. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Raíces y Letras - Mitos, Leyendas y Literatura Colombiana</p>
     </footer>
 
-    <script src="scripts.js"></script>
 </body>
 </html>
+
