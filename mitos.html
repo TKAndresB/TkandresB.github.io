@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mitos Colombianos</title>
+  <meta name="description" content="Descubre los mitos colombianos, relatos ancestrales que explican el origen de muchas creencias.">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Mitos Colombianos</h1>
+    <nav aria-label="Menú principal">
+      <ul>
+        <li><a href="index.html" title="Volver al inicio">Inicio</a></li>
+        <li><a href="leyendas.html" title="Explora leyendas colombianas">Leyendas</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Descubre Mitos Colombianos</h2>
+    <p>Relatos ancestrales que explican el origen de muchas creencias.</p>
+    
+    <!-- Filtro por región -->
+    <div class="categorias">
+      <label for="region-filter-mitos">Filtrar por región:</label>
+      <select id="region-filter-mitos">
+        <option value="todas">Todas</option>
+        <option value="andina">Región Andina</option>
+        <option value="caribe">Región Caribe</option>
+        <option value="amazonia">Amazonía</option>
+      </select>
+    </div>
+    
+    <div class="mitos-container">
+      <article class="mito-item" data-region="andina">
+        <img src="moan.jpg" alt="El Moán">
+        <h3>El Moán</h3>
+        <p>Un ser que protege los ríos y castiga a los pescadores avariciosos.</p>
+        <button type="button" onclick="window.location.href='moan.html'" title="Leer más sobre El Moán">📖 Leer más</button>
+        <button type="button" onclick="window.open('moan.pdf')" title="Descargar PDF de El Moán">📄 Descargar PDF</button>
+        <button type="button" onclick="window.open('https://youtube.com/playlist?list=moan', '_blank')" title="Escuchar el podcast de El Moán">🎧 Escuchar Podcast</button>
+      </article>
+      <article class="mito-item" data-region="caribe">
+        <img src="hombre-caiman.jpg" alt="El Hombre Caimán">
+        <h3>El Hombre Caimán</h3>
+        <p>Un pescador convertido en caimán por espiar a las mujeres del río.</p>
+        <button type="button" onclick="window.location.href='hombre-caiman.html'" title="Leer más sobre El Hombre Caimán">📖 Leer más</button>
+        <button type="button" onclick="window.open('hombre-caiman.pdf')" title="Descargar PDF de El Hombre Caimán">📄 Descargar PDF</button>
+        <button type="button" onclick="window.open('https://youtube.com/playlist?list=hombre-caiman', '_blank')" title="Escuchar el podcast de El Hombre Caimán">🎧 Escuchar Podcast</button>
+      </article>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 Raíces y Letras</p>
+  </footer>
+</body>
+</html>

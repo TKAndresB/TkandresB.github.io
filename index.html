@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raíces y Letras</title>
+  <meta name="description" content="Raíces y Letras explora la rica cultura oral colombiana a través de sus mitos y leyendas.">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Estilo para el párrafo en la sección de inicio */
+    #inicio p {
+      text-align: center;
+      font-size: 1.8rem;  /* Aumenta el tamaño de fuente, ajusta según tu preferencia */
+      margin: 20px auto;
+      max-width: 800px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado con navegación -->
+  <header>
+    <h1>Raíces y Letras: Explorando la Cultura Oral Colombiana</h1>
+    <nav aria-label="Menú principal">
+      <ul>
+        <li><a href="#inicio" title="Ir a la sección de inicio">Inicio</a></li>
+        <li><a href="leyendas.html" title="Explora las leyendas de Colombia">Leyendas</a></li>
+        <li><a href="mitos.html" title="Descubre los mitos colombianos">Mitos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Sección de inicio con sliders -->
+    <section id="inicio" role="region" aria-label="Destacados">
+      <h2>Bienvenido</h2>
+      <p>Descubre la riqueza cultural de Colombia a través de sus mitos y leyendas.</p>
+      <div class="slider-container">
+        <!-- Slider de Leyendas -->
+        <div class="slider" id="slider-leyendas">
+          <button class="slider-btn prev" onclick="prevSlide('leyendas')" aria-label="Anterior Leyendas">&#10094;</button>
+          <div class="slider-track">
+            <div class="slide" onclick="window.location.href='leyendas.html'">
+              <img src="images/leyenda1.jpg" alt="Leyenda 1">
+              <span>Leyenda 1</span>
+            </div>
+            <div class="slide" onclick="window.location.href='leyendas.html'">
+              <img src="images/leyenda2.jpg" alt="Leyenda 2">
+              <span>Leyenda 2</span>
+            </div>
+            <!-- Agrega más slides según sea necesario -->
+          </div>
+          <button class="slider-btn next" onclick="nextSlide('leyendas')" aria-label="Siguiente Leyendas">&#10095;</button>
+        </div>
+
+        <!-- Slider de Mitos -->
+        <div class="slider" id="slider-mitos">
+          <button class="slider-btn prev" onclick="prevSlide('mitos')" aria-label="Anterior Mitos">&#10094;</button>
+          <div class="slider-track">
+            <div class="slide" onclick="window.location.href='mitos.html'">
+              <img src="images/mito1.jpg" alt="Mito 1">
+              <span>Mito 1</span>
+            </div>
+            <div class="slide" onclick="window.location.href='mitos.html'">
+              <img src="images/mito2.jpg" alt="Mito 2">
+              <span>Mito 2</span>
+            </div>
+            <!-- Agrega más slides según sea necesario -->
+          </div>
+          <button class="slider-btn next" onclick="nextSlide('mitos')" aria-label="Siguiente Mitos">&#10095;</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2025 Raíces y Letras - Mitos y Leyendas Colombianas</p>
+  </footer>
+
+  <!-- Scripts: funcionalidad de sliders -->
+  <script src="script.js" defer></script>
+</body>
+</html>
