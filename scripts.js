@@ -1,23 +1,34 @@
-document.getElementById('commentForm').addEventListener('submit', function(e) {
-    e.preventDefault(); // Evitar recargar la página al enviar
 
-    // Obtener los valores de los campos del formulario
-    const username = document.getElementById('username').value;
-    const commentText = document.getElementById('comment').value;
+document.addEventListener("DOMContentLoaded", function () {
+    const filterSelect = document.getElementById("region-filter");
+    const leyendas = document.querySelectorAll(".leyenda-item");
 
-    // Crear un nuevo div con el comentario
-    const newComment = document.createElement('div');
-    newComment.classList.add('comment');
-    newComment.innerHTML = `
-        <p><strong>${username}</strong> says:</p>
-        <p>"${commentText}"</p>
-        <span>Posted just now</span>
-    `;
+    filterSelect.addEventListener("change", function () {
+        const selectedRegion = filterSelect.value;
 
-    // Añadir el nuevo comentario a la sección de comentarios
-    const commentsSection = document.querySelector('.comments-section');
-    commentsSection.appendChild(newComment);
+        leyendas.forEach(leyenda => {
+            if (selectedRegion === "todas" || leyenda.dataset.region === selectedRegion) {
+                leyenda.style.display = "block"; // Mostrar
+            } else {
+                leyenda.style.display = "none"; // Ocultar
+            }
+        });
+    });
+});
 
-    // Limpiar el formulario
-    document.getElementById('commentForm').reset();
+document.addEventListener("DOMContentLoaded", function () {
+    const filterSelect = document.getElementById("region-filter");
+    const items = document.querySelectorAll(".leyenda-item, .mito-item");
+
+    filterSelect.addEventListener("change", function () {
+        const selectedRegion = filterSelect.value;
+
+        items.forEach(item => {
+            if (selectedRegion === "todas" || item.dataset.region === selectedRegion) {
+                item.style.display = "block"; // Mostrar
+            } else {
+                item.style.display = "none"; // Ocultar
+            }
+        });
+    });
 });
