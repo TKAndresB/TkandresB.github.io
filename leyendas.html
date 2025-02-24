@@ -1,0 +1,58 @@
+/* leyendas.html - Versión Mejorada */
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leyendas Colombianas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Leyendas Colombianas</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="mitos.html">Mitos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Descubre Leyendas Colombianas</h2>
+        <p>Historias transmitidas de generación en generación.</p>
+        
+        <!-- Botón para filtrar por región -->
+        <label for="region-filter">Filtrar por región:</label>
+        <select id="region-filter">
+            <option value="todas">Todas</option>
+            <option value="andina">Región Andina</option>
+            <option value="caribe">Región Caribe</option>
+            <option value="amazonia">Amazonía</option>
+        </select>
+        
+        <div class="leyendas-container">
+            <article class="leyenda-item" data-region="andina">
+                <img src="patasola.jpg" alt="La Patasola">
+                <h3>La Patasola</h3>
+                <p>Un espíritu aterrador que habita en los bosques.</p>
+                <button onclick="window.location.href='patasola.html'">📖 Leer más</button>
+                <button onclick="window.open('patasola.pdf')">📄 Descargar PDF</button>
+                <button onclick="window.open('https://youtube.com/playlist?list=patasola', '_blank')">🎧 Escuchar Podcast</button>
+            </article>
+            <article class="leyenda-item" data-region="caribe">
+                <img src="madremonte.jpg" alt="La Madremonte">
+                <h3>La Madremonte</h3>
+                <p>Una guardiana de la naturaleza que castiga a los invasores de su bosque.</p>
+                <button onclick="window.location.href='madremonte.html'">📖 Leer más</button>
+                <button onclick="window.open('madremonte.pdf')">📄 Descargar PDF</button>
+                <button onclick="window.open('https://youtube.com/playlist?list=madremonte', '_blank')">🎧 Escuchar Podcast</button>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Raíces y Letras</p>
+    </footer>
+</body>
+</html>
